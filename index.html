@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=yes">
-  <title>বঙ্গো ট্যাক্স এআই ইঞ্জিন v1.2 | BongoTax AI Engine</title>
+  <title>বঙ্গো ট্যাক্স এআই ইঞ্জিন v1.2 অপ্টিমাইজড | BongoTax AI Engine</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -12,7 +12,7 @@
     body {
       font-family: 'Noto Sans Bengali', 'Siyam Rupali', 'SolaimanLipi', sans-serif;
       background: #0a0f0a;
-      padding: 15px 10px;
+      padding: 12px 8px;
       color: #e0f0e0;
       min-height: 100vh;
     }
@@ -21,51 +21,60 @@
       margin: 0 auto;
       display: flex;
       flex-direction: column;
-      gap: 18px;
+      gap: 16px;
     }
     .header {
       text-align: center;
-      padding: 20px 15px 5px;
+      padding: 18px 12px 4px;
     }
     .header h1 {
-      font-size: 2.2rem;
+      font-size: 2rem;
       font-weight: 800;
       background: linear-gradient(135deg, #ff4da6, #4dffff, #b366ff, #ff4da6);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
       animation: titleGlow 3s infinite alternate;
-      margin-bottom: 5px;
+      margin-bottom: 4px;
     }
     .header .subtitle {
-      font-size: 1rem;
+      font-size: 0.95rem;
       color: #aaccbb;
       font-weight: 500;
     }
     .header .dev {
-      font-size: 0.8rem;
+      font-size: 0.75rem;
       color: #7a9f8a;
       margin-top: 2px;
     }
     .version-badge {
       background: #1e3b2a;
-      padding: 2px 12px;
+      padding: 2px 10px;
       border-radius: 20px;
-      font-size: 0.8rem;
+      font-size: 0.75rem;
       display: inline-block;
       color: #9fefb0;
       border: 1px solid #3a5f42;
+    }
+    .optimized-tag {
+      background: linear-gradient(135deg, #ff4da6, #4dffff);
+      padding: 2px 10px;
+      border-radius: 20px;
+      font-size: 0.7rem;
+      display: inline-block;
+      color: #000;
+      font-weight: 700;
+      margin-left: 4px;
     }
     @keyframes titleGlow {
       0% { filter: drop-shadow(0 0 6px #ff4da6); }
       100% { filter: drop-shadow(0 0 12px #4dffff); }
     }
 
-    /* ── NEON CARDS ── */
     .card {
       background: #0d1f14;
-      border-radius: 22px;
-      padding: 18px 18px;
+      border-radius: 20px;
+      padding: 16px 15px;
       position: relative;
       z-index: 1;
       overflow: hidden;
@@ -74,20 +83,20 @@
     .card::before {
       content: '';
       position: absolute;
-      top: -4px; left: -4px; right: -4px; bottom: -4px;
+      top: -3px; left: -3px; right: -3px; bottom: -3px;
       background: conic-gradient(from 0deg, #ff00c8, #00ffcc, #b700ff, #ff00c8);
-      border-radius: 26px;
+      border-radius: 23px;
       z-index: -2;
       animation: rotateNeon 4s linear infinite;
-      filter: blur(6px);
-      opacity: 0.9;
+      filter: blur(5px);
+      opacity: 0.85;
     }
     .card::after {
       content: '';
       position: absolute;
-      top: 3px; left: 3px; right: 3px; bottom: 3px;
+      top: 2px; left: 2px; right: 2px; bottom: 2px;
       background: #0d1f14;
-      border-radius: 20px;
+      border-radius: 18px;
       z-index: -1;
     }
     @keyframes rotateNeon {
@@ -97,26 +106,26 @@
     }
 
     .section-title {
-      font-size: 1.25rem;
+      font-size: 1.15rem;
       font-weight: 700;
       color: #b1f0c9;
-      margin-bottom: 16px;
+      margin-bottom: 14px;
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 6px;
       border-bottom: 1px solid #2a4a33;
-      padding-bottom: 8px;
+      padding-bottom: 7px;
     }
-    .grid-2, .grid-3 { display: grid; gap: 14px; }
-    .grid-2 { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
-    .grid-3 { grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); }
-    .input-group { display: flex; flex-direction: column; gap: 4px; }
-    label { font-weight: 600; font-size: 0.85rem; color: #b0d0b8; }
+    .grid-2, .grid-3 { display: grid; gap: 12px; }
+    .grid-2 { grid-template-columns: repeat(auto-fit, minmax(155px, 1fr)); }
+    .grid-3 { grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); }
+    .input-group { display: flex; flex-direction: column; gap: 3px; }
+    label { font-weight: 600; font-size: 0.8rem; color: #b0d0b8; }
     input, select {
-      padding: 12px 12px;
+      padding: 10px 10px;
       border: 1px solid #2a4f33;
-      border-radius: 12px;
-      font-size: 0.95rem;
+      border-radius: 10px;
+      font-size: 0.9rem;
       font-family: inherit;
       background: #0f2818;
       color: #e0ffe0;
@@ -125,76 +134,116 @@
     input:focus, select:focus {
       outline: none;
       border-color: #3eff9e;
-      box-shadow: 0 0 8px #1eff88;
+      box-shadow: 0 0 6px #1eff88;
     }
     .net-wealth-box {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 10px;
       flex-wrap: wrap;
       background: #0c1f13;
-      padding: 10px 14px;
-      border-radius: 16px;
-      margin-top: 12px;
+      padding: 8px 12px;
+      border-radius: 14px;
+      margin-top: 10px;
       border: 1px solid #2b472f;
     }
     .net-wealth-box button {
       background: #1e5430;
       color: #d0ffd0;
       border: none;
-      padding: 10px 18px;
-      border-radius: 30px;
+      padding: 8px 16px;
+      border-radius: 25px;
       font-weight: 700;
       cursor: pointer;
       font-family: inherit;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       transition: 0.2s;
-      box-shadow: 0 0 10px #1effaa;
+      box-shadow: 0 0 8px #1effaa;
     }
     .net-wealth-box button:active { transform: scale(0.96); }
     .wealth-hint {
       font-style: italic;
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       color: #8fc9a0;
-      margin-top: 8px;
+      margin-top: 6px;
     }
     .btn-calculate {
       background: #c43e1c;
       color: white;
       border: none;
-      padding: 16px 30px;
-      font-size: 1.2rem;
+      padding: 14px 25px;
+      font-size: 1.1rem;
       font-weight: 700;
-      border-radius: 40px;
+      border-radius: 35px;
       cursor: pointer;
       width: fit-content;
-      margin: 8px auto 0;
+      margin: 6px auto 0;
       display: block;
-      box-shadow: 0 0 18px #ff5e3a;
+      box-shadow: 0 0 16px #ff5e3a;
       transition: 0.2s;
-      letter-spacing: 0.5px;
     }
     .btn-calculate:active { background: #b03518; transform: scale(0.97); }
+
+    .btn-compare {
+      background: #1a3b6e;
+      color: #d0e0ff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      border-radius: 25px;
+      cursor: pointer;
+      margin: 4px auto 0;
+      display: block;
+      box-shadow: 0 0 10px #4d8fff;
+    }
+    .btn-compare:active { background: #122a50; }
+
     .dashboard {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-      gap: 14px;
-      margin: 20px 0 15px;
+      grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+      gap: 12px;
+      margin: 16px 0 12px;
     }
     .metric-card {
       background: #0d2216;
-      border-radius: 18px;
-      padding: 16px 12px;
+      border-radius: 16px;
+      padding: 14px 10px;
       text-align: center;
       border: 1px solid #2b4d32;
     }
-    .metric-value { font-size: 1.6rem; font-weight: 700; color: #5effa0; word-break: break-word; }
-    .metric-label { font-size: 0.8rem; color: #b0d8b8; margin-top: 4px; }
-    .slab-meter { margin: 25px 0 10px; }
+    .metric-value { font-size: 1.4rem; font-weight: 700; color: #5effa0; word-break: break-word; }
+    .metric-label { font-size: 0.75rem; color: #b0d8b8; margin-top: 3px; }
+
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 8px;
+      margin: 12px 0;
+      font-size: 0.8rem;
+    }
+    .comparison-grid .col-header {
+      font-weight: 700;
+      color: #a0d0a0;
+      text-align: center;
+    }
+    .comparison-grid .row-item {
+      padding: 6px 4px;
+      background: #0a1a0f;
+      border-radius: 6px;
+      text-align: center;
+    }
+    .comparison-grid .highlight-cell {
+      background: #1a3a24;
+      color: #7fffaa;
+      font-weight: 700;
+    }
+
+    .slab-meter { margin: 20px 0 8px; }
     .meter-bar {
       display: flex;
-      height: 30px;
-      border-radius: 20px;
+      height: 26px;
+      border-radius: 16px;
       overflow: hidden;
       background: #1e2e20;
       border: 1px solid #3b5e3f;
@@ -203,32 +252,84 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 0.65rem;
+      font-size: 0.6rem;
       font-weight: 700;
       color: white;
       text-shadow: 0 1px 2px black;
     }
-    .pointer { position: relative; height: 8px; margin-top: -5px; }
+    .pointer { position: relative; height: 6px; margin-top: -4px; }
     .arrow {
       width: 0; height: 0;
-      border-left: 9px solid transparent;
-      border-right: 9px solid transparent;
-      border-top: 12px solid #ff5e3a;
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent;
+      border-top: 10px solid #ff5e3a;
       position: absolute;
       transform: translateX(-50%);
-      filter: drop-shadow(0 0 6px #ff5e3a);
+      filter: drop-shadow(0 0 5px #ff5e3a);
     }
+
     .insights ul { list-style: none; padding: 0; }
     .insights li {
       background: #0e2115;
-      margin-bottom: 10px;
-      padding: 12px 14px;
-      border-radius: 14px;
-      border-left: 5px solid #3aff8e;
+      margin-bottom: 8px;
+      padding: 10px 12px;
+      border-radius: 12px;
+      border-left: 4px solid #3aff8e;
       font-weight: 500;
-      font-size: 0.9rem;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      font-size: 0.85rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.3);
     }
+    .insights .priority-p0 {
+      border-left: 4px solid #ff5e3a;
+      background: #1a1510;
+    }
+    .insights .legal-ref {
+      font-size: 0.7rem;
+      color: #8fc9a0;
+      display: block;
+      margin-top: 2px;
+    }
+    .insights .savings-badge {
+      background: #1e5430;
+      color: #7fffaa;
+      padding: 2px 8px;
+      border-radius: 10px;
+      font-size: 0.7rem;
+      font-weight: 700;
+    }
+
+    .risk-meter {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 8px 0;
+    }
+    .risk-bar {
+      flex: 1;
+      height: 8px;
+      border-radius: 4px;
+      background: #1e2e20;
+      overflow: hidden;
+    }
+    .risk-fill {
+      height: 100%;
+      border-radius: 4px;
+      transition: width 0.5s;
+    }
+    .risk-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+
+    .what-if-slider {
+      width: 100%;
+      margin: 8px 0;
+    }
+    .what-if-slider input[type="range"] {
+      width: 100%;
+      accent-color: #3aff8e;
+    }
+
     .modal {
       display: none;
       position: fixed;
@@ -240,10 +341,10 @@
     }
     .modal-content {
       background: #0d1f14;
-      padding: 22px;
-      border-radius: 24px;
-      max-width: 450px;
-      width: 90%;
+      padding: 20px;
+      border-radius: 22px;
+      max-width: 440px;
+      width: 92%;
       max-height: 85vh;
       overflow-y: auto;
       color: #d0f0d0;
@@ -252,26 +353,43 @@
     .modal-content input, .modal-content select {
       background: #0b2415;
     }
-    button {
-      touch-action: manipulation;
+
+    .deadline-alert {
+      background: #2a1a0a;
+      border: 1px solid #ff8c00;
+      padding: 8px 12px;
+      border-radius: 10px;
+      font-size: 0.8rem;
+      margin: 8px 0;
+      color: #ffcc80;
+    }
+
+    button { touch-action: manipulation; }
+
+    @media (max-width: 400px) {
+      .header h1 { font-size: 1.6rem; }
+      .grid-2 { grid-template-columns: 1fr 1fr; gap: 8px; }
+      .grid-3 { grid-template-columns: 1fr 1fr; gap: 8px; }
     }
   </style>
 </head>
 <body>
 <div class="app-wrapper">
   <div class="header">
-    <h1>⚡ AI TAX Analyzer</h1>
-    <div class="subtitle">BongoTax AI Engine <span class="version-badge">v1.2</span></div>
+    <h1>⚡ বঙ্গো ট্যাক্স এআই ইঞ্জিন</h1>
+    <div class="subtitle">BongoTax AI Engine <span class="version-badge">v1.2</span> <span class="optimized-tag">OPTIMIZED</span></div>
     <div class="dev">Developed by Ahnaf Tahmid Arjon</div>
   </div>
 
+  <!-- OPTIMIZATION #14: Exact Surcharge Threshold Alert -->
+  <!-- OPTIMIZATION #6: Deadline-Aware Filing Calendar -->
   <div class="card">
     <div class="section-title">👤 করদাতার প্রোফাইল ও নিট সম্পদ</div>
     <div class="grid-2">
       <div class="input-group">
         <label>করদাতার শ্রেণী</label>
         <select id="taxpayerCategory">
-          <option value="general">পুরুষ</option>
+          <option value="general">সাধারণ করদাতা</option>
           <option value="women_senior">নারী / ৬৫+ বয়স্ক</option>
           <option value="disabled">প্রতিবন্ধী</option>
           <option value="freedom_fighter">যুদ্ধাহত মুক্তিযোদ্ধা</option>
@@ -287,10 +405,12 @@
     </div>
     <div class="net-wealth-box">
       <span style="font-weight:600;">মোট নিট সম্পদ</span>
-      <input type="number" id="netWealth" placeholder="৪,০০,০০,০০০" value="0" step="1000" style="width:150px;">
+      <input type="number" id="netWealth" placeholder="৪,০০,০০,০০০" value="0" step="1000" style="width:130px;">
       <button id="openWealthCalc">📊 সম্পদ ক্যালকুলেটর</button>
     </div>
     <div class="wealth-hint">মোট সম্পদ হিসাব করতে সমস্যা হচ্ছে? আপনার মোট সম্পত্তির বিবরণ আলাদাভাবে দিয়ে মোট মূল্য বের করার জন্য ক্যালকুলেটর বাটনে প্রেস করুন।</div>
+    <div id="surchargeAlert" style="display:none;"></div>
+    <div id="deadlineAlert" class="deadline-alert" style="display:none;"></div>
   </div>
 
   <div class="card">
@@ -316,32 +436,81 @@
       <div class="input-group"><label>প্রভিডেন্ট ফান্ড</label><input type="number" id="inv_pf" value="0" step="500"></div>
       <div class="input-group"><label>কল্যাণ তহবিল</label><input type="number" id="inv_welfare" value="0" step="500"></div>
     </div>
-    <div style="margin-top:18px; display:flex; align-items:center; gap:12px; flex-wrap:wrap;">
-      <label style="font-weight:600;">৩৫% শীর্ষ হার (প্রস্তাবিত) প্রয়োগ করুন</label>
-      <input type="checkbox" id="apply35" style="width:20px; height:20px; accent-color: #3aff8e;">
+    <div style="margin-top:16px; display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
+      <label style="font-weight:600;">৩৫% শীর্ষ হার (প্রস্তাবিত) প্রয়োগ</label>
+      <input type="checkbox" id="apply35" style="width:18px; height:18px; accent-color: #3aff8e;">
     </div>
   </div>
 
-  <button class="btn-calculate" id="calculateBtn">📋 হিসাব ও এক্সপার্ট বিশ্লেষণ করুন</button>
+  <button class="btn-calculate" id="calculateBtn">📋 হিসাব ও এক্সপার্ট বিশ্লেষণ</button>
+
+  <!-- OPTIMIZATION #1: Dual-Track Comparison -->
+  <button class="btn-compare" id="compareBtn" style="display:none;">🔄 বর্তমান বনাম প্রস্তাবিত ৩৫% কর তুলনা</button>
 
   <div id="results" style="display: none;">
     <div class="dashboard" id="metricCards"></div>
+
+    <!-- OPTIMIZATION #1: Dual-Track Comparison Table -->
+    <div class="card" id="comparisonSection" style="display:none;">
+      <div class="section-title">📊 বর্তমান (৩০%) বনাম প্রস্তাবিত (৩৫%) কর তুলনা</div>
+      <div class="comparison-grid" id="comparisonGrid"></div>
+    </div>
+
+    <!-- OPTIMIZATION #3: Optimal Investment Allocator -->
+    <div class="card" id="optimalInvestSection" style="display:none;">
+      <div class="section-title">🎯 আপনার জন্য সর্বোত্তম বিনিয়োগ বরাদ্দ</div>
+      <div id="optimalInvestContent"></div>
+    </div>
+
+    <!-- OPTIMIZATION #7: Audit Risk Score -->
+    <div class="card" id="riskSection" style="display:none;">
+      <div class="section-title">🔍 অডিট রিস্ক স্কোর</div>
+      <div class="risk-meter">
+        <span class="risk-label">রিস্ক লেভেল:</span>
+        <div class="risk-bar"><div class="risk-fill" id="riskFill"></div></div>
+        <span class="risk-label" id="riskPercent">0%</span>
+      </div>
+      <p id="riskComment" style="font-size:0.8rem; margin-top:4px;"></p>
+    </div>
+
     <div class="card slab-meter">
       <div class="section-title">📊 প্রগ্রেসিভ ট্যাক্স স্ল্যাব মিটার</div>
       <div class="meter-bar" id="meterBar"></div>
       <div class="pointer"><div class="arrow" id="arrowIndicator" style="left:0%;"></div></div>
-      <p style="text-align:center; margin-top:10px; font-weight:600; color:#b0f0c9;" id="marginalRateText"></p>
+      <p style="text-align:center; margin-top:8px; font-weight:600; color:#b0f0c9; font-size:0.85rem;" id="marginalRateText"></p>
+      <!-- OPTIMIZATION #8: Marginal Rate Sensitivity -->
+      <p style="text-align:center; font-size:0.75rem; color:#8fc9a0; margin-top:2px;" id="sensitivityText"></p>
     </div>
+
+    <!-- OPTIMIZATION #4: Wealth Tax What-If Simulator -->
+    <div class="card" id="wealthWhatIfSection" style="display:none;">
+      <div class="section-title">🔄 সম্পদ কর "হোয়াট-ইফ" সিমুলেটর</div>
+      <p style="font-size:0.8rem; margin-bottom:6px;">নীচের স্লাইডার ব্যবহার করে দেখুন কিভাবে আপনার সম্পদ কর পরিবর্তিত হয়:</p>
+      <div class="what-if-slider">
+        <input type="range" id="wealthSlider" min="0" max="60000000" step="100000" value="0">
+        <p style="text-align:center; font-size:0.8rem; margin-top:4px;">
+          সম্পদ: <strong id="simWealth">0</strong> টাকা → সম্পদ কর: <strong id="simSurcharge">0</strong> টাকা
+        </p>
+      </div>
+    </div>
+
     <div class="card insights">
       <div class="section-title">🧠 আপনার প্রোফাইল ভিত্তিক ট্যাক্স অপ্টিমাইজেশন</div>
       <ul id="insightsList"></ul>
     </div>
+
+    <!-- OPTIMIZATION #6: Document Checklist -->
+    <div class="card" id="docChecklistSection" style="display:none;">
+      <div class="section-title">📋 রিটার্ন দাখিলের জন্য প্রয়োজনীয় ডকুমেন্ট চেকলিস্ট</div>
+      <ul id="docChecklist"></ul>
+    </div>
   </div>
 </div>
 
+<!-- Wealth Calculator Modal -->
 <div class="modal" id="wealthModal">
   <div class="modal-content">
-    <h3 style="margin-bottom:15px;">নিট সম্পদ ক্যালকুলেটর</h3>
+    <h3 style="margin-bottom:14px;">নিট সম্পদ ক্যালকুলেটর</h3>
     <div class="grid-2">
       <div class="input-group"><label>জমি (মূল্য)</label><input type="number" id="w_land" value="0" step="1000"></div>
       <div class="input-group"><label>ফ্ল্যাট/বাড়ি</label><input type="number" id="w_house" value="0" step="1000"></div>
@@ -350,9 +519,9 @@
       <div class="input-group"><label>শেয়ার/বন্ড</label><input type="number" id="w_shares" value="0" step="1000"></div>
       <div class="input-group"><label>স্বর্ণ/অন্যান্য</label><input type="number" id="w_other" value="0" step="1000"></div>
     </div>
-    <div style="margin-top:20px; display:flex; gap:12px; justify-content: flex-end;">
-      <button id="closeWealthModal" style="background:#3a5f42; border:none; padding:10px 20px; border-radius:20px; color:white;">বাতিল</button>
-      <button id="applyWealth" style="background:#1e5430; color:white; border:none; padding:10px 20px; border-radius:20px;">প্রয়োগ করুন</button>
+    <div style="margin-top:16px; display:flex; gap:10px; justify-content: flex-end;">
+      <button id="closeWealthModal" style="background:#3a5f42; border:none; padding:8px 18px; border-radius:18px; color:white;">বাতিল</button>
+      <button id="applyWealth" style="background:#1e5430; color:white; border:none; padding:8px 18px; border-radius:18px;">প্রয়োগ</button>
     </div>
   </div>
 </div>
@@ -374,6 +543,7 @@
     const INVESTMENT_REBATE_MAX = 1000000;
     const INVESTMENT_REBATE_PERCENT = 0.03;
 
+    // Wealth tax slabs as per updated NBR proposal [citation:3][citation:10]
     const wealthTaxSlabs = [
       { limit: 40000000, rate: 0 },
       { limit: 100000000, rate: 0.005 },
@@ -419,6 +589,64 @@
       return slabs[slabs.length-1].rate;
     }
 
+    // Wealth tax calculation
+    function calcSurcharge(netWealth) {
+      for (let slab of wealthTaxSlabs) {
+        if (netWealth <= slab.limit) return netWealth * slab.rate;
+      }
+      return 0;
+    }
+
+    // OPTIMIZATION #3: Optimal Investment Allocator (Greedy algorithm)
+    function optimalInvestmentAllocator(gap, currentDPS, currentSavings, currentInsurance, currentShares, currentPF, currentWelfare) {
+      let remaining = gap;
+      const result = { dps: 0, savings: 0, insurance: 0, shares: 0, pf: 0, welfare: 0 };
+      
+      const dpsRoom = Math.max(0, DPS_CAP - currentDPS);
+      const savingsRoom = Math.max(0, SAVINGS_CERT_CAP - currentSavings);
+      
+      const allocDPS = Math.min(remaining, dpsRoom);
+      result.dps = allocDPS;
+      remaining -= allocDPS;
+      
+      const allocSavings = Math.min(remaining, savingsRoom);
+      result.savings = allocSavings;
+      remaining -= allocSavings;
+      
+      result.shares = remaining;
+      
+      return result;
+    }
+
+    // OPTIMIZATION #7: Audit Risk Score
+    function calculateAuditRisk(profile) {
+      let risk = 0;
+      const factors = [];
+      
+      if (profile.hasAgriculture && profile.grossIncome > 2000000) {
+        risk += 15;
+        factors.push("উচ্চ কৃষি আয় (ডকুমেন্টেশন ঝুঁকি)");
+      }
+      if (profile.taxableIncome > 5000000 && profile.investmentGap > 500000) {
+        risk += 10;
+        factors.push("বিনিয়োগ ঘাটতি (সম্ভাব্য অডিট ফ্ল্যাগ)");
+      }
+      if (profile.wealthAbove4Cr && profile.taxAfterRebate === 0) {
+        risk += 20;
+        factors.push("উচ্চ সম্পদ কিন্তু কর শূন্য");
+      }
+      if (profile.marginalRate >= 30 && profile.effectiveTaxRate < 10) {
+        risk += 25;
+        factors.push("প্রান্তিক হার ও কার্যকরী করের মধ্যে অস্বাভাবিক পার্থক্য");
+      }
+      if (!profile.hasSalary && !profile.hasBusiness && profile.grossIncome > 1000000) {
+        risk += 12;
+        factors.push("অনির্দিষ্ট আয়ের উৎস");
+      }
+      
+      return { score: Math.min(100, risk), factors };
+    }
+
     const modal = document.getElementById('wealthModal');
     document.getElementById('openWealthCalc').addEventListener('click', () => modal.style.display = 'flex');
     document.getElementById('closeWealthModal').addEventListener('click', () => modal.style.display = 'none');
@@ -430,9 +658,51 @@
       const shares = +document.getElementById('w_shares').value || 0;
       const other = +document.getElementById('w_other').value || 0;
       document.getElementById('netWealth').value = land + house + car + bank + shares + other;
+      checkSurchargeThreshold();
       modal.style.display = 'none';
     });
     window.addEventListener('click', (e) => { if (e.target === modal) modal.style.display = 'none'; });
+
+    // OPTIMIZATION #14: Real-time Surcharge Threshold Alert
+    function checkSurchargeThreshold() {
+      const netWealth = parseFloat(document.getElementById('netWealth').value) || 0;
+      const alertDiv = document.getElementById('surchargeAlert');
+      if (netWealth > 38000000 && netWealth <= 40000000) {
+        const gap = 40000000 - netWealth;
+        alertDiv.style.display = 'block';
+        alertDiv.style.cssText = 'background:#3a1a0a; padding:8px 12px; border-radius:8px; margin-top:6px; font-size:0.8rem; color:#ffaa60;';
+        alertDiv.innerHTML = `⚠️ সতর্কতা: আপনি সম্পদ কর সীমার মাত্র ${gap.toLocaleString()} টাকা নিচে আছেন। সম্পদ ৪ কোটির নিচে রাখতে এই পরিমাণ পরিবারের সদস্যদের নামে হস্তান্তর বিবেচনা করুন।`;
+      } else if (netWealth > 40000000) {
+        alertDiv.style.display = 'block';
+        alertDiv.style.cssText = 'background:#2a0a0a; padding:8px 12px; border-radius:8px; margin-top:6px; font-size:0.8rem; color:#ff8080;';
+        const extra = netWealth - 40000000;
+        alertDiv.innerHTML = `🔴 সম্পদ কর প্রযোজ্য: আপনার সম্পদ ৪ কোটির উপরে ${extra.toLocaleString()} টাকা। এই অতিরিক্ত অংশ পরিবারে বণ্টন করলে সম্পদ কর কমানো সম্ভব।`;
+      } else {
+        alertDiv.style.display = 'none';
+      }
+    }
+
+    document.getElementById('netWealth').addEventListener('input', checkSurchargeThreshold);
+
+    // OPTIMIZATION #6: Deadline Calendar
+    function updateDeadlineAlert() {
+      const now = new Date();
+      const taxYearEnd = new Date(2026, 5, 30); // June 30, 2026
+      const returnDeadline = new Date(2026, 10, 30); // Nov 30, 2026 (general)
+      const deadlineDiv = document.getElementById('deadlineAlert');
+      deadlineDiv.style.display = 'block';
+      
+      if (now < taxYearEnd) {
+        const daysLeft = Math.ceil((taxYearEnd - now) / (1000*60*60*24));
+        deadlineDiv.innerHTML = `📅 কর বছরের শেষ পর্যন্ত ${daysLeft} দিন বাকি। বিনিয়োগ সম্পন্ন করার শেষ সুযোগ।`;
+      } else if (now < returnDeadline) {
+        const daysLeft = Math.ceil((returnDeadline - now) / (1000*60*60*24));
+        deadlineDiv.innerHTML = `📅 রিটার্ন দাখিলের শেষ তারিখ পর্যন্ত ${daysLeft} দিন বাকি (৩০ নভেম্বর ২০২৬)।`;
+      } else {
+        deadlineDiv.innerHTML = `⚠️ রিটার্ন দাখিলের সময়সীমা অতিক্রান্ত হয়েছে। বিলম্বে দাখিলে জরিমানা প্রযোজ্য হবে।`;
+      }
+    }
+    updateDeadlineAlert();
 
     document.getElementById('calculateBtn').addEventListener('click', () => {
       const category = document.getElementById('taxpayerCategory').value;
@@ -471,16 +741,17 @@
       const taxBeforeRebate = calculateTax(totalTaxableIncome, slabs);
       let taxAfterRebate = Math.max(0, taxBeforeRebate - investmentRebate);
 
-      let surcharge = 0;
-      for (let slab of wealthTaxSlabs) {
-        if (netWealth <= slab.limit) {
-          surcharge = netWealth * slab.rate;
-          break;
-        }
-      }
-
+      const surcharge = calcSurcharge(netWealth);
       const totalPayableTax = taxAfterRebate + surcharge;
       const marginalRate = getMarginalRate(totalTaxableIncome, slabs);
+
+      // OPTIMIZATION #1: Dual-Track Calculation
+      const slabs35 = getTaxSlabs(true);
+      const taxBeforeRebate35 = calculateTax(totalTaxableIncome, slabs35);
+      const taxAfterRebate35 = Math.max(0, taxBeforeRebate35 - investmentRebate);
+      const totalPayableTax35 = taxAfterRebate35 + surcharge;
+      const marginalRate35 = getMarginalRate(totalTaxableIncome, slabs35);
+
       const format = (num) => num.toLocaleString('bn-BD', { maximumFractionDigits: 0 });
 
       document.getElementById('results').style.display = 'block';
@@ -492,13 +763,128 @@
         <div class="metric-card" style="background:#1a3a24;"><div class="metric-value" style="color:#7fffaa;">${format(totalPayableTax)}</div><div class="metric-label">মোট প্রদেয় কর</div></div>
       `;
 
+      // Show dual-track comparison if income > 15M
+      if (totalTaxableIncome > 15000000 && !apply35) {
+        document.getElementById('compareBtn').style.display = 'block';
+      } else {
+        document.getElementById('compareBtn').style.display = 'none';
+      }
+
+      document.getElementById('compareBtn').onclick = () => {
+        const compSec = document.getElementById('comparisonSection');
+        compSec.style.display = 'block';
+        document.getElementById('comparisonGrid').innerHTML = `
+          <div class="col-header"></div>
+          <div class="col-header">বর্তমান (৩০%)</div>
+          <div class="col-header">প্রস্তাবিত (৩৫%)</div>
+          <div class="row-item">প্রান্তিক হার</div>
+          <div class="row-item">${(marginalRate*100).toFixed(0)}%</div>
+          <div class="row-item highlight-cell">${(marginalRate35*100).toFixed(0)}%</div>
+          <div class="row-item">রেয়াত-পূর্ব কর</div>
+          <div class="row-item">${format(taxBeforeRebate)}</div>
+          <div class="row-item highlight-cell">${format(taxBeforeRebate35)}</div>
+          <div class="row-item">মোট প্রদেয় কর</div>
+          <div class="row-item">${format(totalPayableTax)}</div>
+          <div class="row-item highlight-cell">${format(totalPayableTax35)}</div>
+          <div class="row-item">পার্থক্য</div>
+          <div class="row-item" colspan="2" style="color:#ff8080; font-weight:700;">+${format(totalPayableTax35 - totalPayableTax)} টাকা বৃদ্ধি</div>
+        `;
+        compSec.scrollIntoView({ behavior: 'smooth' });
+      };
+
+      // OPTIMIZATION #3: Optimal Investment Allocator
+      const investmentGap = rebateLimit - totalEligibleInvestment;
+      if (investmentGap > 0 && totalTaxableIncome > 0) {
+        const optimal = optimalInvestmentAllocator(investmentGap, dps, savingsCert, insurance, sharesInv, pf, welfare);
+        document.getElementById('optimalInvestSection').style.display = 'block';
+        document.getElementById('optimalInvestContent').innerHTML = `
+          <p style="font-size:0.85rem; margin-bottom:8px;">আপনার ৩% রেয়াত পূর্ণ করতে আরও ${format(investmentGap)} টাকা বিনিয়োগ প্রয়োজন। সর্বোত্তম বরাদ্দ:</p>
+          <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+            <tr style="background:#0a1a0f;"><td style="padding:6px;">ডিপিএস</td><td style="padding:6px; text-align:right;">${format(optimal.dps)} টাকা</td></tr>
+            <tr><td style="padding:6px;">সঞ্চয়পত্র</td><td style="padding:6px; text-align:right;">${format(optimal.savings)} টাকা</td></tr>
+            <tr style="background:#0a1a0f;"><td style="padding:6px;">শেয়ার/মিউচুয়াল ফান্ড</td><td style="padding:6px; text-align:right;">${format(optimal.shares)} টাকা</td></tr>
+          </table>
+          <p style="font-size:0.7rem; color:#8fc9a0; margin-top:6px;">* সঞ্চয়পত্রের উৎসে কর ৫% (বিনিয়োগ ≤৫ লাখ) [citation:5][citation:9]</p>
+        `;
+      } else {
+        document.getElementById('optimalInvestSection').style.display = 'none';
+      }
+
+      // OPTIMIZATION #7: Audit Risk Score
+      const profile = {
+        grossIncome: salary + rent + agriculture + business + financial + capital + other,
+        taxableIncome: totalTaxableIncome,
+        effectiveTaxRate: totalTaxableIncome > 0 ? (taxBeforeRebate / totalTaxableIncome) * 100 : 0,
+        marginalRate: marginalRate * 100,
+        investmentGap,
+        wealthAbove4Cr: netWealth > 40000000,
+        hasSalary: salary > 0,
+        hasBusiness: business > 0,
+        hasAgriculture: agriculture > 0,
+        taxAfterRebate
+      };
+      const riskResult = calculateAuditRisk(profile);
+      document.getElementById('riskSection').style.display = 'block';
+      document.getElementById('riskFill').style.width = riskResult.score + '%';
+      document.getElementById('riskFill').style.background = riskResult.score < 30 ? '#3aff8e' : (riskResult.score < 60 ? '#ffcc00' : '#ff4444');
+      document.getElementById('riskPercent').textContent = riskResult.score + '%';
+      document.getElementById('riskComment').innerHTML = riskResult.factors.length > 0 
+        ? '⚠️ ঝুঁকির কারণ: ' + riskResult.factors.join(', ')
+        : '✅ কম অডিট রিস্ক — আপনার ট্যাক্স প্রোফাইল স্বাভাবিক মনে হচ্ছে।';
+
+      // OPTIMIZATION #4: Wealth Tax What-If Simulator
+      if (netWealth > 30000000) {
+        document.getElementById('wealthWhatIfSection').style.display = 'block';
+        const slider = document.getElementById('wealthSlider');
+        slider.max = Math.max(netWealth * 1.5, 60000000);
+        slider.value = netWealth;
+        document.getElementById('simWealth').textContent = format(netWealth);
+        document.getElementById('simSurcharge').textContent = format(surcharge);
+        
+        slider.oninput = function() {
+          const simWealth = parseInt(this.value);
+          const simSur = calcSurcharge(simWealth);
+          document.getElementById('simWealth').textContent = format(simWealth);
+          document.getElementById('simSurcharge').textContent = format(simSur);
+        };
+      } else {
+        document.getElementById('wealthWhatIfSection').style.display = 'none';
+      }
+
+      // OPTIMIZATION #6: Document Checklist
+      const checklist = [];
+      if (salary > 0) checklist.push('বেতন সনদ (Salary Certificate)');
+      if (rent > 0) checklist.push('ভাড়া চুক্তিপত্র ও ভাড়া রসিদ');
+      if (agriculture > 0) checklist.push('কৃষি আয়ের প্রমাণপত্র');
+      if (business > 0) checklist.push('ব্যবসার আয়-ব্যয়ের হিসাব');
+      if (financial > 0 || savingsCert > 0) checklist.push('সঞ্চয়পত্র/ব্যাংক স্টেটমেন্ট');
+      if (capital > 0) checklist.push('মূলধনী লাভের হিসাব (শেয়ার/সম্পত্তি বিক্রয়)');
+      if (dps > 0) checklist.push('ডিপিএস জমা রসিদ');
+      if (savingsCert > 0) checklist.push('সঞ্চয়পত্র ক্রয়ের প্রমাণ');
+      if (insurance > 0) checklist.push('জীবন বীমা প্রিমিয়াম রসিদ');
+      if (sharesInv > 0) checklist.push('শেয়ার/মিউচুয়াল ফান্ড বিনিয়োগের প্রমাণ');
+      if (pf > 0) checklist.push('প্রভিডেন্ট ফান্ড স্টেটমেন্ট');
+      if (netWealth > 40000000) checklist.push('সম্পদ বিবরণী (Wealth Statement)');
+      checklist.push('জাতীয় পরিচয়পত্র/টিআইএন সনদ');
+      checklist.push('গ্যাস/বিদ্যুৎ বিল (ঠিকানা প্রমাণ)');
+
+      document.getElementById('docChecklistSection').style.display = 'block';
+      document.getElementById('docChecklist').innerHTML = checklist.map(item => `<li>${item}</li>`).join('');
+
       drawMeter(totalTaxableIncome, slabs, marginalRate);
       generatePersonalizedInsights({
         totalTaxableIncome, investmentRebate, taxAfterRebate, surcharge, netWealth, category,
         salary, rent, agriculture, business, financial, capital, other,
         cappedDPS, cappedSavingsCert, insurance, sharesInv, pf, welfare,
-        totalEligibleInvestment, rebateLimit, apply35, exemptionLimit, taxBeforeRebate, marginalRate, salaryDeduction
+        totalEligibleInvestment, rebateLimit, apply35, exemptionLimit, taxBeforeRebate, marginalRate, salaryDeduction,
+        investmentGap, totalPayableTax, totalPayableTax35
       });
+
+      // OPTIMIZATION #8: Marginal Rate Sensitivity
+      const extraIncomeTax = calculateTax(totalTaxableIncome + 10000, slabs) - taxBeforeRebate;
+      document.getElementById('sensitivityText').textContent = 
+        `📈 আরও ১০,০০০ টাকা আয় বাড়ালে কর বাড়বে প্রায় ${format(extraIncomeTax)} টাকা (প্রান্তিক হারে)`;
+
       document.getElementById('results').scrollIntoView({ behavior: 'smooth' });
     });
 
@@ -544,112 +930,101 @@
       }
       arrowPos = Math.min(100, Math.max(0, arrowPos));
       arrow.style.left = arrowPos + '%';
-      rateText.textContent = `বর্তমান প্রান্তিক কর হার: ${(marginalRate*100).toFixed(0)}% (আপনার আয় এই স্ল্যাবে পড়েছে)`;
+      rateText.textContent = `বর্তমান প্রান্তিক কর হার: ${(marginalRate*100).toFixed(0)}%`;
     }
 
     function generatePersonalizedInsights(data) {
       const { totalTaxableIncome, investmentRebate, taxAfterRebate, surcharge, netWealth, category,
               salary, rent, agriculture, business, financial, capital, other,
               cappedDPS, cappedSavingsCert, insurance, sharesInv, pf, welfare,
-              totalEligibleInvestment, rebateLimit, apply35, exemptionLimit, taxBeforeRebate, marginalRate, salaryDeduction } = data;
+              totalEligibleInvestment, rebateLimit, apply35, exemptionLimit, taxBeforeRebate, marginalRate, salaryDeduction,
+              investmentGap, totalPayableTax, totalPayableTax35 } = data;
       
       const insights = [];
       const format = (num) => num.toLocaleString('bn-BD', { maximumFractionDigits: 0 });
-      const grossTotalIncome = salary + rent + agriculture + business + financial + capital + other;
 
-      const profile = {
-        grossIncome: grossTotalIncome,
-        taxableIncome: totalTaxableIncome,
-        effectiveTaxRate: totalTaxableIncome > 0 ? (taxBeforeRebate / totalTaxableIncome) * 100 : 0,
-        marginalRate: marginalRate * 100,
-        isHighEarner: totalTaxableIncome > 15000000,
-        isUpperMid: totalTaxableIncome > 3500000,
-        investmentGap: rebateLimit - totalEligibleInvestment,
-        wealthTaxBracket: netWealth > 40000000 ? (netWealth <= 100000000 ? '0.50%' : (netWealth <= 200000000 ? '1.00%' : (netWealth <= 500000000 ? '1.50%' : '2.00%'))) : 'none',
-        wealthAbove4Cr: netWealth > 40000000,
-        wealthNear4Cr: netWealth > 35000000 && netWealth <= 40000000,
-        hasSalary: salary > 0,
-        hasRent: rent > 0,
-        hasAgriculture: agriculture > 0,
-        hasBusiness: business > 0,
-        hasCapitalGains: capital > 0,
-        hasFinancial: financial > 0,
-        salaryDeductionUsed: salaryDeduction,
-        repairDeduction: rent * HOUSE_REPAIR_RATE,
-      };
-
-      if (profile.investmentGap > 0 && totalTaxableIncome > 0) {
-        const gap = Math.ceil(profile.investmentGap);
-        insights.push({ text: `আপনি আরও ${format(gap)} টাকা বিনিয়োগ করলে সম্পূর্ণ ৩% কর রেয়াত (সর্বোচ্চ ১,০০,০০০) নিতে পারবেন। বর্তমানে রেয়াত ব্যবহার হয়েছে ${format(investmentRebate)} টাকা।`, priority: 10 });
+      // OPTIMIZATION #1: Dual-Track warning (P0)
+      if (totalTaxableIncome > 15000000 && !apply35) {
+        insights.push({
+          text: `🔴 P0: আপনার আয় ১.৫ কোটির উপরে — প্রস্তাবিত ৩৫% হার চালু হলে কর ${format(totalPayableTax35 - totalPayableTax)} টাকা বাড়বে। তুলনা দেখতে "বর্তমান বনাম প্রস্তাবিত কর" বাটনে ক্লিক করুন। [citation:3]`,
+          priority: 15
+        });
       }
+
+      // OPTIMIZATION #14: Surcharge threshold (P0)
+      if (netWealth > 38000000 && netWealth <= 40000000) {
+        insights.push({
+          text: `🟠 P0: সম্পদ করের সীমা থেকে মাত্র ${format(40000000 - netWealth)} টাকা দূরে! এই পরিমাণ সম্পদ পরিবারে হস্তান্তর করলে সম্পদ কর শূন্য থাকবে। [citation:10]`,
+          priority: 14
+        });
+      }
+
+      // OPTIMIZATION #3: Optimal Investment (P0)
+      if (investmentGap > 0 && totalTaxableIncome > 0) {
+        insights.push({
+          text: `🎯 P0: আপনি আরও ${format(investmentGap)} টাকা বিনিয়োগ করলে সম্পূর্ণ ৩% রেয়াত পাবেন। সর্বোত্তম বরাদ্দ উপরে দেখুন (ডিপিএস→সঞ্চয়পত্র→শেয়ার ক্রমে)। [citation:1]`,
+          priority: 13
+        });
+      }
+
       if (cappedDPS < DPS_CAP && totalTaxableIncome > 0) {
-        const remaining = DPS_CAP - cappedDPS;
-        insights.push({ text: `ডিপিএস-এ আরও ${format(remaining)} টাকা জমা দিলে কর ছাড় বাড়বে (সর্বোচ্চ ১,২০,০০০)।`, priority: 8 });
+        insights.push({ text: `ডিপিএস-এ আরও ${format(DPS_CAP - cappedDPS)} টাকা জমা দিলে কর ছাড় বাড়বে। [citation:1]`, priority: 8 });
       }
       if (cappedSavingsCert < SAVINGS_CERT_CAP && totalTaxableIncome > 0) {
-        const remaining = SAVINGS_CERT_CAP - cappedSavingsCert;
-        insights.push({ text: `সঞ্চয়পত্রে আরও ${format(remaining)} টাকা বিনিয়োগ করে কর ছাড় সীমা ৫,০০,০০০ ব্যবহার করতে পারেন।`, priority: 7 });
+        insights.push({ text: `সঞ্চয়পত্রে বিনিয়োগ সীমা ৫,০০,০০০ — আরও ${format(SAVINGS_CERT_CAP - cappedSavingsCert)} টাকা যোগ করতে পারেন। উৎসে কর মাত্র ৫% (বিনিয়োগ ≤৫ লাখ)। [citation:5][citation:9]`, priority: 7 });
       }
-      if (profile.investmentGap > 0 && sharesInv < profile.investmentGap) {
-        insights.push({ text: `শেয়ার/মিউচুয়াল ফান্ডে কোনো বিনিয়োগ সীমা নেই — সম্পূর্ণ ${format(profile.investmentGap)} টাকা এখানে বিনিয়োগ করে রেয়াত পূর্ণ করুন।`, priority: 9 });
+      if (investmentGap > 0 && sharesInv < investmentGap) {
+        insights.push({ text: `শেয়ার/মিউচুয়াল ফান্ডে কোনো বিনিয়োগ সীমা নেই — রেয়াত পূর্ণ করতে চাইলে এখানে বিনিয়োগ বিবেচনা করুন। [citation:1]`, priority: 9 });
       }
       if (insurance > 0) {
-        insights.push({ text: `জীবন বীমা পলিসির অংকের ১০% পর্যন্ত প্রিমিয়াম ছাড় পাওয়া যায়। পলিসির কাঠামো পর্যালোচনা করুন (লুপহোল #৪)।`, priority: 5 });
+        insights.push({ text: `জীবন বীমা পলিসির অংকের ১০% পর্যন্ত প্রিমিয়াম ছাড় পাওয়া যায়। [citation:1]`, priority: 5 });
       }
-      if (profile.wealthAbove4Cr) {
-        const savingsIfBelow4Cr = surcharge;
-        if (savingsIfBelow4Cr > 0) {
-          insights.push({ text: `আপনার সম্পদ কর ${format(surcharge)} টাকা। পরিবারের সদস্যদের মধ্যে সম্পদ বণ্টন করে নিট সম্পদ ৪ কোটির নিচে আনলে সম্পূর্ণ সম্পদ কর এড়াতে পারবেন।`, priority: 15 });
-        }
-      } else if (profile.wealthNear4Cr) {
-        insights.push({ text: `আপনার সম্পদ ৪ কোটির কাছাকাছি। সামান্য হস্তান্তর বা পরিকল্পনার মাধ্যমে সম্পদ কর সম্পূর্ণ এড়ানো সম্ভব।`, priority: 14 });
+      if (netWealth > 40000000) {
+        const excess = netWealth - 40000000;
+        insights.push({
+          text: `সম্পদ কর ${format(surcharge)} টাকা। ${format(excess)} টাকা পরিবারে বণ্টন করলে সম্পূর্ণ সম্পদ কর এড়াতে পারবেন। [citation:10]`,
+          priority: 12
+        });
       }
-      if (agriculture > 200000 || (business > 0 && business < 2000000)) {
-        insights.push({ text: `মৎস্য/পোল্ট্রি খাতে আয় ২০ লাখ পর্যন্ত করমুক্ত। আপনার কৃষি/ব্যবসা আয়ের একটি অংশ এ খাতে স্থানান্তর করলে বিপুল কর বাঁচাতে পারেন (লুপহোল #৩৩-৩৪)।`, priority: 13 });
+      if (agriculture > 200000) {
+        insights.push({ text: `মৎস্য/পোল্ট্রি আয় ২০ লাখ পর্যন্ত করমুক্ত — কৃষি আয় এ খাতে স্থানান্তর করলে কর বাঁচাতে পারেন।`, priority: 11 });
       }
-      if (capital > 0) {
-        if (capital <= 5000000) {
-          insights.push({ text: `আপনার মূলধনী লাভ ৫০ লাখের মধ্যে থাকায় সম্পূর্ণ করমুক্ত (তালিকাভুক্ত শেয়ারের জন্য)। সঠিক খাত নিশ্চিত করুন (লুপহোল #১৯)।`, priority: 11 });
-        } else {
-          insights.push({ text: `মূলধনী লাভ ৫০ লাখের বেশি — শুধুমাত্র অতিরিক্ত অংশে কর প্রযোজ্য। সঠিক হিসাব নিশ্চিত করুন।`, priority: 10 });
-        }
+      if (capital > 0 && capital <= 5000000) {
+        insights.push({ text: `মূলধনী লাভ ৫০ লাখের মধ্যে করমুক্ত (তালিকাভুক্ত শেয়ার)। সঠিক খাত নিশ্চিত করুন।`, priority: 10 });
       }
       if (salary > 0 && salaryDeduction < MAX_SALARY_DEDUCTION) {
-        const potentialIncrease = Math.min(salary * SALARY_DEDUCTION_RATIO, MAX_SALARY_DEDUCTION) - salaryDeduction;
-        if (potentialIncrease > 1000) {
-          insights.push({ text: `চাকরির আয় থেকে সর্বোচ্চ ৪,৫০,০০০ ছাড় পেতে আরও ${format(potentialIncrease)} টাকা ছাড়ের সুযোগ আছে (বেতন কাঠামো পুনর্বিন্যাস)।`, priority: 6 });
-        }
+        insights.push({ text: `চাকরির আয় থেকে সর্বোচ্চ ৪,৫০,০০০ ছাড় — বেতন কাঠামো পুনর্বিন্যাসে সুযোগ আছে।`, priority: 6 });
       }
       if (rent > 0) {
-        insights.push({ text: `বাড়ি ভাড়া থেকে ২৫% মেরামত ছাড় (${format(profile.repairDeduction)} টাকা) স্বয়ংক্রিয়ভাবে প্রযোজ্য। প্রকৃত খরচ ছাড়াই এই সুবিধা নিন (লুপহোল #৫৯)।`, priority: 4 });
-      }
-      if (pf > 0 || welfare > 0) {
-        insights.push({ text: `প্রভিডেন্ট ফান্ড ও ওয়েলফেয়ার তহবিলে জমা করমুক্ত এবং উত্তোলন করমুক্ত। আরও জমা করে ভবিষ্যৎ কর বাঁচান।`, priority: 4 });
+        insights.push({ text: `বাড়ি ভাড়া থেকে ২৫% মেরামত ছাড় স্বয়ংক্রিয়ভাবে প্রযোজ্য — প্রকৃত খরচ ছাড়াই।`, priority: 4 });
       }
       if (business > 0) {
-        insights.push({ text: `ব্যবসায় রপ্তানি আয় থাকলে ৫০% কর অব্যাহতি পাওয়া যায়। আপনার ব্যবসায়িক আয় থেকে এটি কাজে লাগান (লুপহোল #৩৫)।`, priority: 8 });
-        insights.push({ text: `ন্যূনতম করের উদ্বৃত্ত পরবর্তী ৩ বছরের সাথে সমন্বয়যোগ্য। রিটার্নে সঠিকভাবে দাবি করুন (লুপহোল #৬০)।`, priority: 4 });
+        insights.push({ text: `রপ্তানি আয়ে ৫০% কর অব্যাহতি — ব্যবসায়িক কাঠামো পর্যালোচনা করুন।`, priority: 8 });
       }
-      insights.push({ text: `সর্বজনীন পেনশন প্রকল্পে বিনিয়োগ ও পেনশন আয় উভয়ই করমুক্ত। আজই অংশগ্রহণ বিবেচনা করুন (লুপহোল #১৩)।`, priority: 2 });
-      insights.push({ text: `পত্নী/সন্তান/পিতা-মাতার নামে সম্পদ স্থানান্তর সম্পূর্ণ করমুক্ত। উত্তরাধিকার কর নেই (লুপহোল #২৭, #২৮, #৪৯, #৫০)।`, priority: 1 });
-      insights.push({ text: `প্রবাসী ভাই-বোন বা বিদেশ থেকে উপহার ব্যাংকিং চ্যানেলে এলে করমুক্ত। রিটার্নে উল্লেখের প্রয়োজন নেই (লুপহোল #১৪, #৫২, #৫৪)।`, priority: 2 });
-      if (agriculture > 100000) {
-        insights.push({ text: `কৃষি আয় থেকে ১,০০,০০০ টাকা করমুক্ত। প্রযোজ্য হলে সম্পূর্ণ কৃষি আয় ২ লাখ পর্যন্ত করমুক্ত (লুপহোল #১৫)।`, priority: 5 });
-      }
+      insights.push({ text: `সর্বজনীন পেনশন প্রকল্পে বিনিয়োগ ও পেনশন আয় উভয়ই করমুক্ত।`, priority: 2 });
+      insights.push({ text: `পত্নী/সন্তান/পিতা-মাতার নামে সম্পদ স্থানান্তর সম্পূর্ণ করমুক্ত। [citation:10]`, priority: 1 });
       if (financial > 0) {
-        insights.push({ text: `সঞ্চয়পত্রের সুদের উৎসে কর (৫%) চূড়ান্ত কর। রিটার্নে এই আয় পুনরায় করযোগ্য নয় (লুপহোল #৬১)।`, priority: 3 });
+        insights.push({ text: `সঞ্চয়পত্রের সুদের উৎসে কর (৫%) চূড়ান্ত — রিটার্নে পুনরায় কর দিতে হবে না। [citation:5]`, priority: 3 });
       }
-      if (!apply35 && totalTaxableIncome > 15000000) {
-        insights.push({ text: `আপনার আয় ১.৫ কোটির উপরে। প্রস্তাবিত ৩৫% হার চালু হলে কর বৃদ্ধি পাবে। টগল অন করে সম্ভাব্য কর দেখুন।`, priority: 10 });
-      }
-      if (totalEligibleInvestment < INVESTMENT_REBATE_MAX && taxAfterRebate > 0) {
-        insights.push({ text: `অনুমোদিত দাতব্য প্রতিষ্ঠানে দান করেও কর রেয়াত পাওয়া যায়। ছাড় পূর্ণ করতে এটি বিবেচনা করুন।`, priority: 5 });
+      insights.push({ text: `প্রবাসী ভাই-বোন বা বিদেশ থেকে উপহার ব্যাংকিং চ্যানেলে করমুক্ত।`, priority: 2 });
+
+      // OPTIMIZATION #15: Inflation-Adjusted Real Tax Rate
+      const inflationRate = 9.5;
+      const realTaxRate = totalTaxableIncome > 0 ? ((taxAfterRebate / totalTaxableIncome) * 100) - inflationRate : 0;
+      if (totalTaxableIncome > 0) {
+        insights.push({
+          text: `📊 মূল্যস্ফীতি সমন্বিত প্রকৃত কর হার: ${realTaxRate.toFixed(1)}% (নামিক: ${((taxAfterRebate/totalTaxableIncome)*100).toFixed(1)}% - মূল্যস্ফীতি ~${inflationRate}%)`,
+          priority: 0
+        });
       }
 
       const unique = Array.from(new Map(insights.map(item => [item.text, item])).values());
       unique.sort((a,b) => b.priority - a.priority);
-      const topInsights = unique.slice(0, 12);
-      document.getElementById('insightsList').innerHTML = topInsights.map(item => `<li>${item.text}</li>`).join('');
+      const topInsights = unique.slice(0, 15);
+      document.getElementById('insightsList').innerHTML = topInsights.map(item => {
+        const p0Class = item.priority >= 12 ? 'priority-p0' : '';
+        return `<li class="${p0Class}">${item.text}</li>`;
+      }).join('');
     }
   })();
 </script>
